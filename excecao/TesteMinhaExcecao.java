@@ -14,6 +14,7 @@ public class TesteMinhaExcecao {
     } catch (MinhaExcecao e) {
       e.printStackTrace();
     }
+    System.out.println("\nFIM");
     sc.close();
   }
 }
