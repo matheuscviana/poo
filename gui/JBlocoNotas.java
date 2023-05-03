@@ -1,6 +1,7 @@
 package gui;
 
 import java.awt.BorderLayout;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
@@ -16,7 +17,7 @@ import javax.swing.JTextArea;
 
 public class JBlocoNotas extends JFrame {
 
-  private static final long serialVersionUID = -6336097206892502266L;
+  private static final long serialVersionUID = -6336097206892502226L;
 
   private JMenuBar menubar;
   private JMenu mnArquivo;
@@ -34,15 +35,17 @@ public class JBlocoNotas extends JFrame {
   public JBlocoNotas() {
 
     super("Sem título");
-    setSize(600, 450);
+    setSize(1200, 900);
     // setLayout(new BorderLayout());
 
     arquivo = new Arquivo();
 
     textarea = new JTextArea();
+    textarea.setFont(new Font("ARIAL", Font.BOLD, 26));
     add(textarea, BorderLayout.CENTER);
 
     miNovo = new JMenuItem("Novo");
+    miNovo.setFont(new Font("ARIAL", Font.BOLD, 22));
     miNovo.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
         novoArquivo();
@@ -50,6 +53,7 @@ public class JBlocoNotas extends JFrame {
     });
 
     miAbrir = new JMenuItem("Abrir");
+    miAbrir.setFont(new Font("ARIAL", Font.BOLD, 22));
     miAbrir.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
         abrirArquivo();
@@ -57,6 +61,7 @@ public class JBlocoNotas extends JFrame {
     });
 
     miSalvar = new JMenuItem("Salvar");
+    miSalvar.setFont(new Font("ARIAL", Font.BOLD, 22));
     miSalvar.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
         salvarArquivo();
@@ -64,6 +69,7 @@ public class JBlocoNotas extends JFrame {
     });
 
     miSalvarComo = new JMenuItem("Salvar Como");
+    miSalvarComo.setFont(new Font("ARIAL", Font.BOLD, 22));
     miSalvarComo.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
         salvarArquivo();
@@ -71,6 +77,7 @@ public class JBlocoNotas extends JFrame {
     });
 
     miFechar = new JMenuItem("Fechar");
+    miFechar.setFont(new Font("ARIAL", Font.BOLD, 22));
     miFechar.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
         fecharJanela();
@@ -78,6 +85,7 @@ public class JBlocoNotas extends JFrame {
     });
 
     miCreditos = new JMenuItem("Créditos");
+    miCreditos.setFont(new Font("ARIAL", Font.BOLD, 22));
     miCreditos.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
         JOptionPane.showMessageDialog(
@@ -87,6 +95,7 @@ public class JBlocoNotas extends JFrame {
     });
 
     mnArquivo = new JMenu("Arquivo");
+    mnArquivo.setFont(new Font("ARIAL", Font.BOLD, 22));
     mnArquivo.add(miNovo);
     mnArquivo.add(miAbrir);
     mnArquivo.add(miSalvar);
@@ -94,9 +103,11 @@ public class JBlocoNotas extends JFrame {
     mnArquivo.add(miFechar);
 
     mnSobre = new JMenu("Sobre");
+    mnSobre.setFont(new Font("ARIAL", Font.BOLD, 22));
     mnSobre.add(miCreditos);
 
     menubar = new JMenuBar();
+
     menubar.add(mnArquivo);
     menubar.add(mnSobre);
     setJMenuBar(menubar);
