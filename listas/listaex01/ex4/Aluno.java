@@ -1,5 +1,4 @@
-package listaex01.ex4;
-
+package listas.listaex01.ex4;
 
 public class Aluno {
 
@@ -23,7 +22,7 @@ public class Aluno {
   public String getNome() {
     return nome;
   }
- 
+
   public void setRegistro(int registro) {
     this.registro = registro;
   }
@@ -34,8 +33,7 @@ public class Aluno {
 
   public String toString() {
     return String.format(
-      "{registro: %d, nome: %s}", 
-      registro, nome
-    );
+        "{registro: %d, nome: %s}",
+        registro, nome);
   }
 }

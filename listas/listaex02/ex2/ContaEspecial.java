@@ -1,4 +1,4 @@
-package listaex02.ex2;
+package listas.listaex02.ex2;
 
 public class ContaEspecial extends ContaBancaria {
 

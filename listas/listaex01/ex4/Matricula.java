@@ -1,10 +1,9 @@
-package listaex01.ex4;
+package listas.listaex01.ex4;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.ArrayList;
-
 
 public class Matricula {
 
@@ -47,25 +46,25 @@ public class Matricula {
   public void setAluno(Aluno aluno) {
     this.aluno = aluno;
   }
-  
+
   public float calculaTotal() {
     float total = 0.0F;
-    for(Disciplina d : disciplinas) {
+    for (Disciplina d : disciplinas) {
       total += d.getValor();
     }
     return total;
   }
 
   public String toString() {
-    
-    StringBuilder sb = new StringBuilder("{"); 
-    
+
+    StringBuilder sb = new StringBuilder("{");
+
     sb.append(String.format("\n\tnumero: %d", numero));
     sb.append(String.format("\n\tdata: %s", SimpleDateFormat.getInstance().format(data)));
     sb.append(String.format("\n\taluno: %s", aluno));
     sb.append(String.format("\n\tdisciplinas: {"));
 
-    for(Disciplina d : disciplinas) {
+    for (Disciplina d : disciplinas) {
       sb.append(String.format("\n\t\t%s", d));
     }
 

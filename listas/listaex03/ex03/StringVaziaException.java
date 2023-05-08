@@ -1,4 +1,4 @@
-package lista2.ex03;
+package listas.listaex03.ex03;
 
 public class StringVaziaException extends Exception {
 

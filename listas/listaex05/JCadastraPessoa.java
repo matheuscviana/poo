@@ -1,4 +1,4 @@
-package gui;
+package listas.listaex05;
 
 import java.awt.Dimension;
 import java.awt.FlowLayout;

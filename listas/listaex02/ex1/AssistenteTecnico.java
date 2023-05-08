@@ -1,4 +1,4 @@
-package listaex02.ex1;
+package listas.listaex02.ex1;
 
 public class AssistenteTecnico extends Assistente {
 

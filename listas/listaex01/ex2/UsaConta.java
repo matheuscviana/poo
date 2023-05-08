@@ -1,4 +1,4 @@
-package listaex01.ex2;
+package listas.listaex01.ex2;
 
 import java.util.Scanner;
 

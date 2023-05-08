@@ -1,4 +1,4 @@
-package listaex01.ex1;
+package listas.listaex01.ex1;
 
 public class NumeroComplexo {
 

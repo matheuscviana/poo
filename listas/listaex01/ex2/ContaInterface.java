@@ -1,4 +1,4 @@
-package listaex01.ex2;
+package listas.listaex01.ex2;
 
 import java.util.Scanner;
 
@@ -9,12 +9,11 @@ public class ContaInterface {
     while (true) {
 
       System.out.print(
-        "\n0 - SAIR" +
-        "\n1 - DEPOSITAR" +
-        "\n2 - SACAR" +
-        "\n3 - VER SALDO" +
-        "\nINFORME A SUA OPÇÃO: "
-      );
+          "\n0 - SAIR" +
+              "\n1 - DEPOSITAR" +
+              "\n2 - SACAR" +
+              "\n3 - VER SALDO" +
+              "\nINFORME A SUA OPÇÃO: ");
 
       int op = scn.nextInt();
 

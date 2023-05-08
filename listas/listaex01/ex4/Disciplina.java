@@ -1,4 +1,4 @@
-package listaex01.ex4;
+package listas.listaex01.ex4;
 
 public class Disciplina {
 
@@ -25,7 +25,7 @@ public class Disciplina {
   public String getNome() {
     return nome;
   }
-  
+
   public float getValor() {
     return valor;
   }
@@ -33,6 +33,7 @@ public class Disciplina {
   public void setCodigo(int codigo) {
     this.codigo = codigo;
   }
+
   public void setNome(String nome) {
     this.nome = nome;
   }
@@ -43,8 +44,7 @@ public class Disciplina {
 
   public String toString() {
     return String.format(
-      "{codigo: %d, nome: %s, valor: %.2f}", 
-      codigo, nome, valor
-    );
+        "{codigo: %d, nome: %s, valor: %.2f}",
+        codigo, nome, valor);
   }
 }

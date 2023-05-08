@@ -1,4 +1,4 @@
-package listaex02.ex3;
+package listas.listaex02.ex3;
 
 import java.util.List;
 import java.util.Scanner;

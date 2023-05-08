@@ -1,4 +1,4 @@
-package lista2.ex06;
+package listas.listaex04.ex2;
 
 public class Lista<T> {
 

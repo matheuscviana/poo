@@ -1,4 +1,4 @@
-package listaex01.ex1;
+package listas.listaex01.ex1;
 
 import java.util.Scanner;
 
@@ -10,11 +10,11 @@ public class Main {
 
     System.out.print("\nDigite os termos a e b do 1o número complexo: ");
     NumeroComplexo nc1 = new NumeroComplexo(scn.nextDouble(), scn.nextDouble());
-    
+
     System.out.print("\nDigite os termos a e b do 2o número complexo: ");
     NumeroComplexo nc2 = new NumeroComplexo(scn.nextDouble(), scn.nextDouble());
-    
-    scn.close();    
+
+    scn.close();
 
     System.out.printf("\n(%s) + (%s) = (%s)", nc1, nc2, nc1.soma(nc2));
     System.out.printf("\n(%s) * (%s) = (%s)", nc1, nc2, nc1.produto(nc2));
