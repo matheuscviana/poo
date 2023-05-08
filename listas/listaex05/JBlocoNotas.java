@@ -1,13 +1,11 @@
 package listas.listaex05;
 
 import java.awt.BorderLayout;
-import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
@@ -35,7 +33,7 @@ public class JBlocoNotas extends JFrame {
 
   public JBlocoNotas() {
 
-    super("Sem t�tulo");
+    super("Sem título");
     setSize(600, 450);
     // setLayout(new BorderLayout());
 
@@ -79,11 +77,11 @@ public class JBlocoNotas extends JFrame {
       }
     });
 
-    miCreditos = new JMenuItem("Cr�ditos");
+    miCreditos = new JMenuItem("Créditos");
     miCreditos.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
         JOptionPane.showMessageDialog(
-            textarea.getParent(), "Autor: Matheus Viana", "Cr�ditos",
+            textarea.getParent(), "Autor: Matheus Viana", "Créditos",
             JOptionPane.INFORMATION_MESSAGE);
       }
     });
@@ -118,7 +116,7 @@ public class JBlocoNotas extends JFrame {
 
     return JOptionPane.showConfirmDialog(
         this,
-        "O arquivo foi modificado. Deseja salv�-lo?",
+        "O arquivo foi modificado. Deseja salvá-lo?",
         "Alerta",
         JOptionPane.YES_NO_CANCEL_OPTION,
         JOptionPane.QUESTION_MESSAGE);
@@ -135,7 +133,7 @@ public class JBlocoNotas extends JFrame {
     if (salvar != JOptionPane.CANCEL_OPTION) {
       arquivo = new Arquivo();
       textarea.setText("");
-      setTitle("Sem t�tulo");
+      setTitle("Sem título");
     }
   }
 
